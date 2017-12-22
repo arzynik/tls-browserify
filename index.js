@@ -48,7 +48,7 @@ util.inherits(TLSSocket, net.Socket);
 
 exports.TLSSocket = TLSSocket;
 
-TLSSocket.prototype.log = function(arguments) {
+TLSSocket.prototype.log = function() {
 	if (this._tlsOptions.debug) {
 		console.log.apply(console, Array.prototype.slice.call(arguments));
 	}
